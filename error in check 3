@@ -1,0 +1,41 @@
+Docker 29.8.1 with BuildKit and Buildx detected on deployment server (localhost).
+2026-Oct-10 11:33:53 Starting deployment of mohamedegawish/wezaraaa:main to localhost.
+2026-Oct-10 11:33:54 Preparing container with helper image: docker.io/coollabsio/coolify-helper:1.0.17
+2026-Oct-10 11:33:57 ----------------------------------------
+2026-Oct-10 11:33:57 Importing mohamedegawish/wezaraaa:main (commit sha 87603c1bb04ddc20ef250e882feac742dea1332f) to /artifacts/kwnrnyoonprchfqgxk1pqvdp.
+2026-Oct-10 11:34:03 Build configuration changed. Rebuilding image.
+2026-Oct-10 11:34:07 ----------------------------------------
+2026-Oct-10 11:34:07 Building docker image started.
+2026-Oct-10 11:34:07 To check the current progress, click on Show Debug Logs.
+2026-Oct-10 11:35:10 Building docker image completed.
+2026-Oct-10 11:35:11 ----------------------------------------
+2026-Oct-10 11:35:11 Rolling update started.
+2026-Oct-10 11:35:14 New container started.
+2026-Oct-10 11:35:14 Custom healthcheck found in Dockerfile.
+2026-Oct-10 11:35:14 Waiting for healthcheck to pass on the new container.
+2026-Oct-10 11:35:14 Waiting for the start period (30 seconds) before starting healthcheck.
+2026-Oct-10 11:35:44 Attempt 1 of 3 | Healthcheck status: "starting"
+2026-Oct-10 11:35:44 Healthcheck logs: (no logs) | Return code: 1
+2026-Oct-10 11:36:15 Attempt 2 of 3 | Healthcheck status: "starting"
+2026-Oct-10 11:36:15 Healthcheck logs: (no logs) | Return code: 1
+2026-Oct-10 11:36:46 Attempt 3 of 3 | Healthcheck status: "unhealthy"
+2026-Oct-10 11:36:46 Healthcheck logs: (no logs) | Return code: 1
+2026-Oct-10 11:36:46 New container is unhealthy.
+2026-Oct-10 11:36:46 ----------------------------------------
+2026-Oct-10 11:36:46 Container logs:
+2026-Oct-10 11:36:46 [CMD]: docker logs -n 100 'mfiiqqpktfhock082ae791zf-20261010T113349'
+2026-Oct-10 11:36:46 [server] seed-on-boot=seeded
+2026-Oct-10 11:36:46 [server] seed updates: applied seed_users_v2, seed_shams_content_v1
+2026-Oct-10 11:36:46 [server] listening on http://localhost:3000 — prefix /api/v1 (env=production)
+2026-Oct-10 11:36:46 [chat-reminder] disabled — set GMAIL_USER and GMAIL_APP_PASSWORD to enable email reminders
+2026-Oct-10 11:36:46 [mail-queue] disabled — set GMAIL_USER and GMAIL_APP_PASSWORD to email factories on every stage update
+2026-Oct-10 11:36:46 (node:1) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+2026-Oct-10 11:36:46 (Use `node --trace-warnings ...` to show where the warning was created)
+2026-Oct-10 11:36:46 ----------------------------------------
+2026-Oct-10 11:36:46 Removing old containers.
+2026-Oct-10 11:36:46 ----------------------------------------
+2026-Oct-10 11:36:46 WARNING: Dockerfile or Docker Image based deployment detected. The healthcheck needs a curl or wget command to check the health of the application. Please make sure that it is available in the image or turn off healthcheck on Coolify's UI.
+2026-Oct-10 11:36:46 ----------------------------------------
+2026-Oct-10 11:36:46 New container is not healthy, rolling back to the old container.
+2026-Oct-10 11:36:48 Rolling update completed.
+2026-Oct-10 11:36:48 Gracefully shutting down build container: kwnrnyoonprchfqgxk1pqvdp 
